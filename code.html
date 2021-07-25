@@ -66,20 +66,128 @@
                 </div>
                 <div class="col d-flex align-content-center justify-content-center justify-content-md-end">
                     <button id="showHTMLCodeBtn" type="button" class="btn btn-dark btn-lg codeBtnActive m-1">Html</button>
-                    <button id="showCSSCodeBtn" type="button" class="btn btn-outline-dark btn-lg codeBtnActive m-1">CSS</button>
-                    <button id="showJSCodeBtn" type="button" class="btn btn-outline-dark btn-lg codeBtnActive m-1">JavaScript</button>
-                    <button id="showCSharpCodeBtn" type="button" class="btn btn-outline-dark btn-lg codeBtnActive m-1">C#</button>
+                    <button id="showCSSCodeBtn" type="button" class="btn btn-outline-dark btn-lg m-1">CSS</button>
+                    <button id="showJSCodeBtn" type="button" class="btn btn-outline-dark btn-lg m-1">JavaScript</button>
+                    <div class="dropdown">
+                        <button id="showCSharpCodeBtn" type="button" class="btn btn-outline-dark dropdown-toggle btn-lg m-1" data-bs-toggle="dropdown" aria-expanded="false">C#</button>
+                        <ul class="dropdown-menu bg-light" aria-labelledby="showCSharpCodeBtn">
+                            <li><button id="jobsControllerbtn" type="button" class="dropdown-item btn m-1">Jobs Controller</button></li>
+                            <li><button id="customersControllerbtn" type="button" class="dropdown-item btn m-1">Customers Controller</button></li>
+                            <li><button id="jobClassbtn" type="button" class="dropdown-item btn m-1">Job Class</button></li>
+                            <li><button id="customerClassbtn" type="button" class="dropdown-item btn m-1">Customer Class</button></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-lg-2">
+            <!-- Single Section -->
+            <div id="htmlCode" class="row row-cols-1 row-cols-lg-2">
                 <!-- Code Side -->
                 <div class="col-lg-8">
                     <pre class="line-numbers"><code class="language-javascript">
                         <!-- Put valid javascript here -->
-                        // Call Hello World
-                        function HelloWorld(){
-                            alert("Hello World!");
-                        }
+                        HTML CODE
+                    </code>
+                    </pre>
+                </div>
+                <!-- Description Side -->
+                <div class="col-lg-4 mt-1">
+                    <p>The Code is structed in one function.</p>
+                    <h5>Hello World</h5>
+                    <p>Hellow World is a function that displays an alert with a message of "Hello World!"</p>
+                </div>
+            </div>
+            <!-- Single Section -->
+            <div id="cssCode" class="row row-cols-1 row-cols-lg-2 invisibleCodeDiv">
+                <!-- Code Side -->
+                <div class="col-lg-8">
+                    <pre class="line-numbers"><code class="language-javascript">
+                        <!-- Put valid javascript here -->
+                        CSS CODE
+                    </code>
+                    </pre>
+                </div>
+                <!-- Description Side -->
+                <div class="col-lg-4 mt-1">
+                    <p>The Code is structed in one function.</p>
+                    <h5>Hello World</h5>
+                    <p>Hellow World is a function that displays an alert with a message of "Hello World!"</p>
+                </div>
+            </div>
+            <!-- Single Section -->
+            <div id="javascriptCode" class="row row-cols-1 row-cols-lg-2 invisibleCodeDiv">
+                <!-- Code Side -->
+                <div class="col-lg-8">
+                    <pre class="line-numbers"><code class="language-javascript">
+                        <!-- Put valid javascript here -->
+                        JAVASCRIPT CODE
+                    </code>
+                    </pre>
+                </div>
+                <!-- Description Side -->
+                <div class="col-lg-4 mt-1">
+                    <p>The Code is structed in one function.</p>
+                    <h5>Hello World</h5>
+                    <p>Hellow World is a function that displays an alert with a message of "Hello World!"</p>
+                </div>
+            </div>
+            <!-- Single Section -->
+            <div id="jobsControllerCode" class="row row-cols-1 row-cols-lg-2 invisibleCodeDiv">
+                <!-- Code Side -->
+                <div class="col-lg-8">
+                    <pre class="line-numbers"><code class="language-javascript">
+                        <!-- Put valid javascript here -->
+                        JOB CONTROLLER
+                    </code>
+                    </pre>
+                </div>
+                <!-- Description Side -->
+                <div class="col-lg-4 mt-1">
+                    <p>The Code is structed in one function.</p>
+                    <h5>Hello World</h5>
+                    <p>Hellow World is a function that displays an alert with a message of "Hello World!"</p>
+                </div>
+            </div>
+            <!-- Single Section -->
+            <div id="customersControllerCode" class="row row-cols-1 row-cols-lg-2 invisibleCodeDiv">
+                <!-- Code Side -->
+                <div class="col-lg-8">
+                    <pre class="line-numbers"><code class="language-javascript">
+                        <!-- Put valid javascript here -->
+                        CUSTOMER CONTROLLER
+                    </code>
+                    </pre>
+                </div>
+                <!-- Description Side -->
+                <div class="col-lg-4 mt-1">
+                    <p>The Code is structed in one function.</p>
+                    <h5>Hello World</h5>
+                    <p>Hellow World is a function that displays an alert with a message of "Hello World!"</p>
+                </div>
+            </div>
+            <!-- Single Section -->
+            <div id="jobClassCode" class="row row-cols-1 row-cols-lg-2 invisibleCodeDiv">
+                <!-- Code Side -->
+                <div class="col-lg-8">
+                    <pre class="line-numbers"><code class="language-javascript">
+                        <!-- Put valid javascript here -->
+                        JOB CLASS
+                    </code>
+                    </pre>
+                </div>
+                <!-- Description Side -->
+                <div class="col-lg-4 mt-1">
+                    <p>The Code is structed in one function.</p>
+                    <h5>Hello World</h5>
+                    <p>Hellow World is a function that displays an alert with a message of "Hello World!"</p>
+                </div>
+            </div>
+            <!-- Single Section -->
+            <div id="customerClassCode" class="row row-cols-1 row-cols-lg-2 invisibleCodeDiv">
+                <!-- Code Side -->
+                <div class="col-lg-8">
+                    <pre class="line-numbers"><code class="language-javascript">
+                        <!-- Put valid javascript here -->
+                        CUSTOMER CLASS
                     </code>
                     </pre>
                 </div>
@@ -128,6 +236,16 @@
             'left-trim': true,
             'right-trim': true
         })
+    </script>
+    <!-- Event Listeners For Buttons -->
+    <script>
+        document.getElementById("showHTMLCodeBtn").addEventListener("click", HTMLButtonSelect);
+        document.getElementById("showCSSCodeBtn").addEventListener("click", CSSButtonSelect);
+        document.getElementById("showJSCodeBtn").addEventListener("click", JSButtonSelect);
+        document.getElementById("jobsControllerbtn").addEventListener("click", JobControllerButtonSelect);
+        document.getElementById("customersControllerbtn").addEventListener("click", CustomerControllerButtonSelect);
+        document.getElementById("jobClassbtn").addEventListener("click", JobClassButtonSelect);
+        document.getElementById("customerClassbtn").addEventListener("click", CustomerClassButtonSelect);
     </script>
 </body>
 
