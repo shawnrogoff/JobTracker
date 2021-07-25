@@ -1,4 +1,14 @@
 function HTMLButtonSelect(){
+  // swap the active button from bg-outline-dark to bg-dark
+  document.getElementById("showHTMLCodeBtn").classList.add("btn-dark");
+  document.getElementById("showHTMLCodeBtn").classList.remove("btn-outline-dark");
+  document.getElementById("showCSSCodeBtn").classList.remove("btn-dark");
+  document.getElementById("showCSSCodeBtn").classList.add("btn-outline-dark");
+  document.getElementById("showJSCodeBtn").classList.remove("btn-dark");
+  document.getElementById("showJSCodeBtn").classList.add("btn-outline-dark");
+  document.getElementById("showCSharpCodeBtn").classList.remove("btn-dark");
+  document.getElementById("showCSharpCodeBtn").classList.add("btn-outline-dark");
+  
   // show the html div, and hide the others
   document.getElementById("htmlCode").classList.remove("invisibleCodeDiv");
   document.getElementById("cssCode").classList.add("invisibleCodeDiv");
@@ -10,6 +20,16 @@ function HTMLButtonSelect(){
 }
 
 function CSSButtonSelect(){
+  // swap the active button from bg-outline-dark to bg-dark
+  document.getElementById("showHTMLCodeBtn").classList.remove("btn-dark");
+  document.getElementById("showHTMLCodeBtn").classList.add("btn-outline-dark");
+  document.getElementById("showCSSCodeBtn").classList.add("btn-dark");
+  document.getElementById("showCSSCodeBtn").classList.remove("btn-outline-dark");
+  document.getElementById("showJSCodeBtn").classList.remove("btn-dark");
+  document.getElementById("showJSCodeBtn").classList.add("btn-outline-dark");
+  document.getElementById("showCSharpCodeBtn").classList.remove("btn-dark");
+  document.getElementById("showCSharpCodeBtn").classList.add("btn-outline-dark");
+  
   // show the css div, and hide the others
   document.getElementById("htmlCode").classList.add("invisibleCodeDiv");
   document.getElementById("htmlCode").classList.add("invisibleCodeDiv");document.getElementById("cssCode").classList.remove("invisibleCodeDiv");
@@ -21,6 +41,16 @@ function CSSButtonSelect(){
 }
 
 function JSButtonSelect(){
+  // swap the active button from bg-outline-dark to bg-dark
+  document.getElementById("showHTMLCodeBtn").classList.remove("btn-dark");
+  document.getElementById("showHTMLCodeBtn").classList.add("btn-outline-dark");
+  document.getElementById("showCSSCodeBtn").classList.remove("btn-dark");
+  document.getElementById("showCSSCodeBtn").classList.add("btn-outline-dark");
+  document.getElementById("showJSCodeBtn").classList.add("btn-dark");
+  document.getElementById("showJSCodeBtn").classList.remove("btn-outline-dark");
+  document.getElementById("showCSharpCodeBtn").classList.remove("btn-dark");
+  document.getElementById("showCSharpCodeBtn").classList.add("btn-outline-dark");
+  
   // show the javascript div, and hide the others
   document.getElementById("htmlCode").classList.add("invisibleCodeDiv");
   document.getElementById("cssCode").classList.add("invisibleCodeDiv");
@@ -32,6 +62,16 @@ function JSButtonSelect(){
 }
 
 function JobControllerButtonSelect(){
+  // swap the active button from bg-outline-dark to bg-dark
+  document.getElementById("showHTMLCodeBtn").classList.remove("btn-dark");
+  document.getElementById("showHTMLCodeBtn").classList.add("btn-outline-dark");
+  document.getElementById("showCSSCodeBtn").classList.remove("btn-dark");
+  document.getElementById("showCSSCodeBtn").classList.add("btn-outline-dark");
+  document.getElementById("showJSCodeBtn").classList.remove("btn-dark");
+  document.getElementById("showJSCodeBtn").classList.add("btn-outline-dark");
+  document.getElementById("showCSharpCodeBtn").classList.add("btn-dark");
+  document.getElementById("showCSharpCodeBtn").classList.remove("btn-outline-dark");
+  
   // show the job controller div, and hide the others
   document.getElementById("htmlCode").classList.add("invisibleCodeDiv");
   document.getElementById("cssCode").classList.add("invisibleCodeDiv");
